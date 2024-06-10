@@ -1,0 +1,18 @@
+universe         = vanilla
+getenv           = true
+initialdir       = $ENV(PWD)
+request_cpus     = 1
+notification     = Always
+Rank             = cpus
+should_transfer_files = YES
+## DO NOT MODIFY ABOVE ME ##
+
+###########################################
+## Fill in your assigned machine ##########
+## do NOT include .csail.mit.edu suffix ###
+Requirements = (machine == "arch-sec-X")
+###########################################
+
+## DO NOT MODIFY BELOW ME ##
+accounting_group = $ENV(CONDOR_GROUP)
+Queue
